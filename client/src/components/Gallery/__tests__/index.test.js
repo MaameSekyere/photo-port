@@ -10,12 +10,12 @@ const portrait = {
 
 afterEach(cleanup);
 
-describe("Gallery component", () => {
+describe("Gallery is rendering", () => {
   it("renders", () => {
     render(<Gallery currentCategory={portrait} />);
   });
 
-  it("matches snapshot", () => {
+  it("renders", () => {
     const { asFragment } = render(<Gallery currentCategory={portrait} />);
     expect(asFragment()).toMatchSnapshot();
   });
